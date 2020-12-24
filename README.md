@@ -21,7 +21,7 @@
 
 ---
 
-[![Seanie's github stats](https://github-readme-stats.vercel.app/api?username=seanieStack)](https://github.com/anuraghazra/github-readme-stats)
+[![Seanie's github stats](https://github-readme-stats.vercel.app/api?username=seanieStack&show_icons=true)](https://github.com/anuraghazra/github-readme-stats)
 
 [website]: https://purtrex.xyz/
 [twitter]: https://twitter.com/seaniestack987
