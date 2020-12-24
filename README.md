@@ -21,6 +21,10 @@
 
 ---
 
+[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=seanieStack)](https://github.com/anuraghazra/github-readme-stats)
+
+---
+
 [![Seanie's github stats](https://github-readme-stats.vercel.app/api?username=seanieStack&show_icons=true)](https://github.com/anuraghazra/github-readme-stats)
 
 [website]: https://purtrex.xyz/
