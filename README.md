@@ -1,6 +1,6 @@
 ### Hi there, I'm Seanie - aka [Purtrex][website] 👋
 
-[![Website](https://img.shields.io/website?label=codeSTACKr.com&style=for-the-badge&url=https%3A%2F%2Fcodestackr.com)](https://purtrex.xyz/)
+[![Website](https://img.shields.io/website?label=purtrex.xyz&style=for-the-badge&url=https%3A%2F%2Fpurtrex.xyz)](https://purtrex.xyz/)
 [![Twitter Follow](https://img.shields.io/twitter/follow/seaniestack987?color=1DA1F2&logo=twitter&style=for-the-badge)](https://twitter.com/intent/follow?original_referer=https%3A%2F%2Fgithub.com%2FseanieStack&screen_name=seaniestack987)
 
 ## I'm a Student, Programmer, Game Developer , and Gamer!!
