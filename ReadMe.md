@@ -1,5 +1,5 @@
 # 💫 About Me:
-🔭 I’m currently working on API development with Ostia Software Solutions<br>🌱 I’m currently learning Spring<br>⚡ Fun fact I've been programming for 15 Years
+🔭 I’m currently studying Computer Systems at University Limerick <br>🌱 I’m currently learning Spring<br>⚡ Fun fact I've been programming for 15 Years<br> 🏢COOP: API development with Ostia Software Solutions
 
 
 ## 🌐 Socials:
