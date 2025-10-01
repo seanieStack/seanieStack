@@ -1,5 +1,5 @@
 # 💫 About Me:
-Hi, I’m Seanie Stack.<br><br>Currently studying Computer Systems at University of Limerick. <br><br>I'm interested in backed API development, language design and other small scripting projects.<br><br>I have internship experience developing Spring Boot backed API micro systems.
+Hi, I’m Seanie Stack.<br><br>Currently studying Computer Systems at University of Limerick. <br><br>I'm interested in backend API development, language design and other small scripting projects.<br><br>I have internship experience developing Spring Boot backend API micro systems.
 
 
 ## 🌐 Socials:
