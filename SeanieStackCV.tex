@@ -1,0 +1,59 @@
+\documentclass[11pt]{article}
+\usepackage[margin=2cm]{geometry}
+\usepackage{enumitem}
+\pagestyle{empty}
+\usepackage{hyperref}
+
+\begin{document}
+
+  \begin{center}
+
+    {\LARGE \textbf {Seanie Stack}} \\
+    Listowel, Co. Kerry | \href{mailto:seaniestack345@gmail.com}{seaniestack345@gmail.com} | +353 87 453 8221 | \href{linkedin.com/in/seanie-stack}{Linkedin} | \href{github.com/seanieStack}{Github}
+  \end{center}
+
+  \vspace{0.5em}
+  \section*{Professinal Summary}
+  \vspace{0.3em}
+  Final Year BSc Computer Systems student with 8 months of professinal software development expirecne with a focus on backend and systems engineering. Designed and build a full programing langauge (lexer parser, tree-walk interpreter, embedding API) in Java with ANTLR4, and shipped production code in Java / Spring Boot during an internship where a single performance fixed reduced all API response times by 91 \%. Comforable across Java, Python, C, Rust and Go, with hands on expirecne with Linux, Docker, MySQL, PostreSQL, RabbitMQ and Redis. Eligible to work in Ireland and the UK.
+  
+  \vspace{0.5em}
+  \section*{Education}
+  \textbf{University of Limerick} \hfill Sept 2022 -- Jan 2027 \\
+  BSc Computer Systems 3.11 QCA Second Class Hounors\hfill
+
+  \section*{Professinal Expirence}
+  \textbf{Ostia Solutions} \hfill Bray, Co. Wicklow \\
+  \textit{Software Development Intern} \hfill May 2024 | Jan 2025
+  \begin{itemize}[leftmargin=*]
+    \item Worked across test develoment and perforamce testing during an 8 month placement, contributing to the quality and reliabilty of production of Spring Boot Java services.
+    \item Designed and implemented automted test suites using JUnit, JMeter and Postman increasing test converage and catching bugs earlier in the release cycle.
+    \item Indentifed and fixed a cache misconfiguration across all major API endpoints, reducing average response time by 91 \% and improved thoughput under load.
+    \item Investigated and reported perforamnce bottle necks using load testing and profiling, while working alongside senior developers to ship fixes.
+    \item Operated in an agile team enviroment using git for version control and standard CI work flows for build, test and depolyment.
+  \end{itemize}
+
+  \section*{Projects}
+  \textbf{RJScript | Final Year Project} (Java, ANTLR4) \hfill 2025 - 2026 \\
+  \href{https://github.com/seanieStack/RJScript-FYP}{Github}
+  \begin{itemize}
+    \item Designed and implemented a dynamically-typed scripting language from scratch in Java (~12,000 lines of code), including lexer, parser, AST, and tree-walk interpreter built on ANTLR4.
+    \item Implemented core language features including variables, arithmetic and logical operators with short-circuit evaluation, functions with closures, lexical scoping, strings, floats, arrays with negative indexing, and modulo.
+    \item Built a two-tier standard library and module system, plus a Java embedding API (RJScriptEngine) allowing host applications to execute RJScript code and exchange values with the JVM.
+    \item Added source-location-aware error reporting and configurable debug flags to improve the developer experience when writing and debugging RJScript programs.
+  \end{itemize}
+  \textbf{E-Library Mircoservice Backend} (Java, Spring Boot, RabbitMQ, Docker) \hfill 2026 \\
+  \href{https://github.com/seanieStack/SoftwareArchitectureProject}{Github}
+  \begin{itemize}
+    \item Built a microservices-based e-library application split into a core service (catalogue, loans, users) and a support service (fines, notifications), communicating asynchronously via RabbitMQ.
+    \item Used RabbitMQ message queues to decouple fine processing and user notifications from the main request path, improving responsiveness and resilience to downstream failures.    
+    \item Containerised all services with Docker and orchestrated local deployment with Docker Compose, including dependency services such as the message broker and database.  
+  \end{itemize}
+
+  \section*{Technical Skills}
+  \textbf{Langauges}:  Java, Python, C, Rust (basic), Go (basic) \\
+  \textbf{Frameworks \& libraries}: Spring Boot, ANTLR4, JUnit, Mockito, JMeter \\
+  \textbf{Tools \& Platforms}: Git, Docker, Docker Compose, Maven, Gradle, RabbitMQ, Linux (Arch) \\
+  \textbf{Databases}: MySQL, Redis, PostreSQL \\
+  \textbf{Concepts}: Compilers and interpreters, language design, backend systems, microservices, performance testing, automated testing, message queues, REST APIs \\
+  \end{document}
