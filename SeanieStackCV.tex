@@ -1,59 +1,95 @@
-\documentclass[11pt]{article}
-\usepackage[margin=2cm]{geometry}
+\documentclass[10pt]{article}
+\usepackage[top=1.2cm,bottom=1.2cm,left=1.5cm,right=1.5cm]{geometry}
 \usepackage{enumitem}
-\pagestyle{empty}
+\usepackage{array}
+\usepackage{titlesec}
+\usepackage[dvipsnames]{xcolor}
+\usepackage{lmodern}
 \usepackage{hyperref}
+
+% --- Colours ---------------------------------------------------------------
+\definecolor{accent}{HTML}{1F4E79}
+\definecolor{muted}{HTML}{555555}
+
+\hypersetup{colorlinks=true, urlcolor=accent, linkcolor=accent}
+\pagestyle{empty}
+\setlength{\parindent}{0pt}
+
+% --- Section headings: coloured title with a rule underneath ---------------
+\titleformat{\section}
+  {\large\bfseries\color{accent}}{}{0em}{\MakeUppercase}
+  [{\color{accent!40}\titlerule[1pt]}]
+\titlespacing{\section}{0pt}{7pt}{3pt}
+
+% --- Compact, accent-bulleted lists ----------------------------------------
+\setlist[itemize]{leftmargin=1.4em, itemsep=1.5pt, topsep=1pt, parsep=0pt,
+  label=\textcolor{accent}{\small\textbullet}}
+
+% --- Entry helper: bold title on the left, bold date on the right ----------
+\newcommand{\entry}[2]{\textbf{#1}\hfill\textbf{#2}\par}
 
 \begin{document}
 
-  \begin{center}
+% --- Header ---------------------------------------------------------------
+\begin{center}
+  {\huge\bfseries\color{accent}Seanie Stack}\\[3pt]
+  \small
+  Listowel, Co. Kerry \;\textbullet\;
+  \href{mailto:seaniestack345@gmail.com}{seaniestack345@gmail.com} \;\textbullet\;
+  +353 87 453 8221 \;\textbullet\;
+  \href{https://linkedin.com/in/seanie-stack}{LinkedIn} \;\textbullet\;
+  \href{https://github.com/seanieStack}{GitHub}
+\end{center}
 
-    {\LARGE \textbf {Seanie Stack}} \\
-    Listowel, Co. Kerry | \href{mailto:seaniestack345@gmail.com}{seaniestack345@gmail.com} | +353 87 453 8221 | \href{linkedin.com/in/seanie-stack}{LinkedIn} | \href{github.com/seanieStack}{GitHub}
-  \end{center}
+% --- Summary --------------------------------------------------------------
+\section{Professional Summary}
+Final Year BSc Computer Systems student focused on backend and systems engineering, with 8 months of professional experience building production Java / Spring Boot services --- including a performance fix that cut API response times by 91\%. Comfortable across Java, Python, C, Rust and Go with a Linux and Docker toolchain. Eligible to work in Ireland and the UK.
 
-  \vspace{0.5em}
-  \section*{Professional Summary}
-  \vspace{0.3em}
-  Final Year BSc Computer Systems student with 8 months of professional software development experience with a focus on backend and systems engineering. Designed and built a full programming language (lexer, parser, tree-walk interpreter, embedding API) in Java with ANTLR4, and shipped production code in Java / Spring Boot during an internship where a single performance fix reduced all API response times by 91 \%. Comfortable across Java, Python, C, Rust and Go, with hands-on experience with Linux, Docker, MySQL, PostgreSQL, RabbitMQ and Redis. Eligible to work in Ireland and the UK.
-  
-  \vspace{0.5em}
-  \section*{Education}
-  \textbf{University of Limerick} \hfill Sept 2022 -- Jan 2027 \\
-  BSc Computer Systems 3.11 QCA Second Class Honours\hfill
+% --- Education ------------------------------------------------------------
+\section{Education}
+\entry{University of Limerick}{Sept 2022 -- Jan 2027}
+BSc Computer Systems \;\textbullet\; 3.11 QCA \;\textbullet\; Second Class Honours, Grade 1 (2.1)
 
-  \section*{Professional Experience}
-  \textbf{Ostia Solutions} \hfill Bray, Co. Wicklow \\
-  \textit{Software Development Intern} \hfill May 2024 | Jan 2025
-  \begin{itemize}[leftmargin=*]
-    \item Worked across test development and performance testing during an 8 month placement, contributing to the quality and reliability of production Spring Boot Java services.
-    \item Designed and implemented automated test suites using JUnit, JMeter and Postman, increasing test coverage and catching bugs earlier in the release cycle.
-    \item Identified and fixed a cache misconfiguration across all major API endpoints, reducing average response time by 91 \% and improving throughput under load.
-    \item Investigated and reported performance bottlenecks using load testing and profiling, while working alongside senior developers to ship fixes.
-    \item Operated in an agile team environment using git for version control and standard CI workflows for build, test and deployment.
-  \end{itemize}
+% --- Experience -----------------------------------------------------------
+\section{Professional Experience}
+\entry{Ostia Solutions \normalfont\textcolor{muted}{--- Bray, Co. Wicklow}}{May 2024 -- Jan 2025}
+\textit{Software Development Intern}
+\begin{itemize}
+  \item Worked across test development and performance testing during an 8-month placement, contributing to the quality and reliability of production Spring Boot Java services.
+  \item Designed and implemented automated test suites using JUnit, JMeter and Postman, increasing test coverage and catching bugs earlier in the release cycle.
+  \item Identified and fixed a cache misconfiguration across all major API endpoints, reducing average response time by 91\% and improving throughput under load.
+  \item Investigated and reported performance bottlenecks using load testing and profiling, while working alongside senior developers to ship fixes.
+  \item Operated in an agile team environment using git for version control and standard CI workflows for build, test and deployment.
+\end{itemize}
 
-  \section*{Projects}
-  \textbf{RJScript | Final Year Project} (Java, ANTLR4) \hfill 2025 - 2026 \\
-  \href{https://github.com/seanieStack/RJScript-FYP}{Github}
-  \begin{itemize}
-    \item Designed and implemented a dynamically-typed scripting language from scratch in Java (~12,000 lines of code), including lexer, parser, AST, and tree-walk interpreter built on ANTLR4.
-    \item Implemented core language features including variables, arithmetic and logical operators with short-circuit evaluation, functions with closures, lexical scoping, strings, floats, arrays with negative indexing, and modulo.
-    \item Built a two-tier standard library and module system, plus a Java embedding API (RJScriptEngine) allowing host applications to execute RJScript code and exchange values with the JVM.
-    \item Added source-location-aware error reporting and configurable debug flags to improve the developer experience when writing and debugging RJScript programs.
-  \end{itemize}
-  \textbf{E-Library Microservice Backend} (Java, Spring Boot, RabbitMQ, Docker) \hfill 2026 \\
-  \href{https://github.com/seanieStack/SoftwareArchitectureProject}{Github}
-  \begin{itemize}
-    \item Built a microservices-based e-library application split into a core service (catalogue, loans, users) and a support service (fines, notifications), communicating asynchronously via RabbitMQ.
-    \item Used RabbitMQ message queues to decouple fine processing and user notifications from the main request path, improving responsiveness and resilience to downstream failures.    
-    \item Containerised all services with Docker and orchestrated local deployment with Docker Compose, including dependency services such as the message broker and database.  
-  \end{itemize}
+% --- Projects -------------------------------------------------------------
+\section{Projects}
+\entry{RJScript \normalfont\textcolor{muted}{| Final Year Project (Java, ANTLR4)}}{2025 -- 2026}
+\href{https://github.com/seanieStack/RJScript-FYP}{GitHub}
+\begin{itemize}
+  \item Designed and implemented a dynamically-typed scripting language from scratch in Java ($\sim$12{,}000 lines of code), including lexer, parser, AST, and tree-walk interpreter built on ANTLR4.
+  \item Implemented core language features including variables, arithmetic and logical operators with short-circuit evaluation, functions with closures, lexical scoping, strings, floats, arrays with negative indexing, and modulo.
+  \item Built a two-tier standard library and module system, plus a Java embedding API (RJScriptEngine) allowing host applications to execute RJScript code and exchange values with the JVM.
+  \item Added source-location-aware error reporting and configurable debug flags to improve the developer experience when writing and debugging RJScript programs.
+\end{itemize}
 
-  \section*{Technical Skills}
-  \textbf{Languages}:  Java, Python, C, Rust (basic), Go (basic) \\
-  \textbf{Frameworks \& libraries}: Spring Boot, ANTLR4, JUnit, Mockito, JMeter \\
-  \textbf{Tools \& Platforms}: Git, Docker, Docker Compose, Maven, Gradle, RabbitMQ, Linux (Arch) \\
-  \textbf{Databases}: MySQL, Redis, PostgreSQL \\
-  \textbf{Concepts}: Compilers and interpreters, language design, backend systems, microservices, performance testing, automated testing, message queues, REST APIs \\
-  \end{document}
+\vspace{3pt}
+\entry{E-Library Microservice Backend \normalfont\textcolor{muted}{(Java, Spring Boot, RabbitMQ, Docker)}}{2026}
+\href{https://github.com/seanieStack/SoftwareArchitectureProject}{GitHub}
+\begin{itemize}
+  \item Built a microservices-based e-library application split into a core service (catalogue, loans, users) and a support service (fines, notifications), communicating asynchronously via RabbitMQ.
+  \item Used RabbitMQ message queues to decouple fine processing and user notifications from the main request path, improving responsiveness and resilience to downstream failures.
+  \item Containerised all services with Docker and orchestrated local deployment with Docker Compose, including dependency services such as the message broker and database.
+\end{itemize}
+
+% --- Skills ---------------------------------------------------------------
+\section{Technical Skills}
+\begin{tabular}{@{}>{\bfseries}p{4.1cm}@{}p{\dimexpr\linewidth-4.1cm\relax}@{}}
+  Languages          & Java, Python, C, Rust (basic), Go (basic) \\[2pt]
+  Frameworks \& Libs & Spring Boot, ANTLR4, JUnit, Mockito, JMeter \\[2pt]
+  Tools \& Platforms & Git, Docker, Docker Compose, Maven, Gradle, RabbitMQ, Linux (Arch) \\[2pt]
+  Databases          & MySQL, Redis, PostgreSQL \\[2pt]
+  Concepts           & Compilers and interpreters, language design, backend systems, microservices, performance testing, automated testing, message queues, REST APIs \\
+\end{tabular}
+
+\end{document}
